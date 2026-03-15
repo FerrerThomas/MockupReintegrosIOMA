@@ -3,6 +3,10 @@ import Layout from './components/Layout';
 import Inicio from './pages/Inicio';
 import IniciarReintegro from './pages/IniciarReintegro';
 import DatosPrecargador from './pages/DatosPrecargador';
+import ListadoReintegros from './pages/ListadoReintegros';
+import DetalleReintegro from './pages/DetalleReintegro';
+import ReintegrosPendientes from './pages/ReintegrosPendientes';
+import AuditoriaDetalle from './pages/AuditoriaDetalle';
 
 function App() {
   return (
@@ -13,6 +17,10 @@ function App() {
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/iniciar-reintegro" element={<IniciarReintegro />} />
           <Route path="/datos-precargado" element={<DatosPrecargador />} />
+          <Route path="/listado-reintegros" element={<ListadoReintegros />} />
+          <Route path="/detalle-reintegro/:id" element={<DetalleReintegro />} />
+          <Route path="/reintegros-pendientes" element={<ReintegrosPendientes />} />
+          <Route path="/auditoria-detalle/:id" element={<AuditoriaDetalle />} />
         </Routes>
       </Layout>
     </Router>

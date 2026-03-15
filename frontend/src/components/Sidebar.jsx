@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, PlusCircle, List, Search } from 'lucide-react';
+import { Home, PlusCircle, List, Search, ClipboardCheck } from 'lucide-react';
 
 export default function Sidebar({ isOpen }) {
   const location = useLocation();
@@ -24,10 +24,14 @@ export default function Sidebar({ isOpen }) {
           <PlusCircle size={20} />
           <span>Iniciar Reintegro</span>
         </Link>
-        <button className={getLinkClasses('/listado-reintegros')}>
+        <Link to="/listado-reintegros" className={getLinkClasses('/listado-reintegros')}>
           <List size={20} />
           <span>Listado Reintegros</span>
-        </button>
+        </Link>
+        <Link to="/reintegros-pendientes" className={getLinkClasses('/reintegros-pendientes')}>
+          <ClipboardCheck size={20} />
+          <span>Reintegros Pendientes</span>
+        </Link>
         <button className={getLinkClasses('/buscar')}>
           <Search size={20} />
           <span>Buscar</span>
