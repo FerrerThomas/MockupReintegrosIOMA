@@ -1,4 +1,4 @@
-import { Search, Eye, Filter, Clock, Layers } from 'lucide-react';
+import { Search, Eye, Filter, Clock, Layers, LayoutList } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -88,19 +88,14 @@ export default function ReintegrosPendientes() {
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-center">
                     <div className="flex items-center justify-center gap-1">
-                      <Link
-                        to={`/auditoria-detalle/${r.id}`}
-                        className="inline-flex items-center justify-center p-2 rounded-lg text-primary hover:bg-primary/10 transition-colors"
-                        title="Vista 1: Auditoría Global"
-                      >
-                        <Eye size={18} />
+                      <Link to={`/auditoria-detalle/${r.id}`} className="inline-flex items-center justify-center p-2 rounded-lg text-primary hover:bg-primary/10 transition-colors" title="Vista 1: Auditoría Global">
+                        <Eye size={16} />
                       </Link>
-                      <Link
-                        to={`/auditoria-detalle2/${r.id}`}
-                        className="inline-flex items-center justify-center p-2 rounded-lg text-slate-500 hover:bg-slate-100 hover:text-primary transition-colors"
-                        title="Vista 2: Auditoría por Práctica"
-                      >
-                        <Layers size={18} />
+                      <Link to={`/auditoria-detalle2/${r.id}`} className="inline-flex items-center justify-center p-2 rounded-lg text-slate-500 hover:bg-slate-100 hover:text-primary transition-colors" title="Vista 2: Auditoría por Práctica (íconos)">
+                        <Layers size={16} />
+                      </Link>
+                      <Link to={`/auditoria-detalle3/${r.id}`} className="inline-flex items-center justify-center p-2 rounded-lg text-teal-500 hover:bg-teal-50 hover:text-teal-600 transition-colors" title="Vista 3: Auditoría por Práctica (botones)">
+                        <LayoutList size={16} />
                       </Link>
                     </div>
                   </td>
