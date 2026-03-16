@@ -7,6 +7,7 @@ import ListadoReintegros from './pages/ListadoReintegros';
 import DetalleReintegro from './pages/DetalleReintegro';
 import ReintegrosPendientes from './pages/ReintegrosPendientes';
 import AuditoriaDetalle from './pages/AuditoriaDetalle';
+import AuditoriaDetalle2 from './pages/AuditoriaDetalle2';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/detalle-reintegro/:id" element={<DetalleReintegro />} />
           <Route path="/reintegros-pendientes" element={<ReintegrosPendientes />} />
           <Route path="/auditoria-detalle/:id" element={<AuditoriaDetalle />} />
+          <Route path="/auditoria-detalle2/:id" element={<AuditoriaDetalle2 />} />
         </Routes>
       </Layout>
     </Router>
