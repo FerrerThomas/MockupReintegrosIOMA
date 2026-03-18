@@ -87,10 +87,10 @@ export default function IniciarReintegro() {
       
       <div className="space-y-8">
         <section className="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
-          <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
+          <div className="px-6 py-4 border-b border-[#00AEC3]/30 flex justify-between items-center" style={{ background: "#00AEC3" }}>
             <div className="flex items-center gap-2">
-              <UserRound className="text-primary w-6 h-6" />
-              <h3 className="font-bold text-slate-800 dark:text-slate-200">1. Datos del Iniciador</h3>
+              <UserRound className="text-white w-6 h-6" />
+              <h3 className="font-bold text-white">1. Datos del Iniciador</h3>
             </div>
           </div>
           <div className="p-6">
@@ -119,7 +119,7 @@ export default function IniciarReintegro() {
                 <button 
                   type="submit" 
                   disabled={isSearching}
-                  className="w-full md:w-auto px-8 py-2.5 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-all flex items-center justify-center gap-2 shadow-sm disabled:opacity-75 disabled:cursor-not-allowed"
+                  className="w-full md:w-auto px-8 py-2.5 bg-white text-[#00AEC3] rounded-lg font-bold hover:bg-white/90 transition-all flex items-center justify-center gap-2 shadow-sm disabled:opacity-75 disabled:cursor-not-allowed"
                 >
                   <Search size={20} className={isSearching ? "animate-spin" : ""} />
                   {isSearching ? "Buscando..." : "Buscar"}

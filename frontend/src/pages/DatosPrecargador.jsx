@@ -173,12 +173,12 @@ export default function DatosPrecargador() {
       <div className="space-y-8">
         {/* Section 1: Datos del Iniciador */}
         <section className="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
-          <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
+          <div className="px-6 py-4 border-b border-[#00AEC3]/30 flex justify-between items-center" style={{ background: "#00AEC3" }}>
             <div className="flex items-center gap-2">
-              <User className="text-primary w-6 h-6" />
-              <h3 className="font-bold text-slate-800 dark:text-slate-200">1. Datos del Iniciador</h3>
+              <User className="text-white w-6 h-6" />
+              <h3 className="font-bold text-white">1. Datos del Iniciador</h3>
             </div>
-            <button onClick={() => setIsSearchingIniciador(!isSearchingIniciador)} className="px-4 py-1.5 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-all flex items-center justify-center gap-2 shadow-sm text-sm ml-auto">
+            <button onClick={() => setIsSearchingIniciador(!isSearchingIniciador)} className="px-4 py-1.5 bg-white text-[#00AEC3] rounded-lg font-bold hover:bg-white/90 transition-all flex items-center justify-center gap-2 shadow-sm text-sm ml-auto">
               <Search size={16} />
               Buscar Iniciador
             </button>
@@ -202,12 +202,12 @@ export default function DatosPrecargador() {
 
         {/* Section 2: Datos del Afiliado */}
         <section className="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
-          <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
+          <div className="px-6 py-4 border-b border-[#00AEC3]/30 flex justify-between items-center" style={{ background: "#00AEC3" }}>
             <div className="flex items-center gap-2">
-              <IdCard className="text-primary w-6 h-6" />
-              <h3 className="font-bold text-slate-800 dark:text-slate-200">2. Datos del Afiliado</h3>
+              <IdCard className="text-white w-6 h-6" />
+              <h3 className="font-bold text-white">2. Datos del Afiliado</h3>
             </div>
-            <button onClick={() => setIsSearchingAfiliado(!isSearchingAfiliado)} className="px-4 py-1.5 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-all flex items-center justify-center gap-2 shadow-sm text-sm ml-auto">
+            <button onClick={() => setIsSearchingAfiliado(!isSearchingAfiliado)} className="px-4 py-1.5 bg-white text-[#00AEC3] rounded-lg font-bold hover:bg-white/90 transition-all flex items-center justify-center gap-2 shadow-sm text-sm ml-auto">
               <Search size={16} />
               Buscar Afiliado
             </button>
@@ -231,12 +231,12 @@ export default function DatosPrecargador() {
 
         {/* Section 3: Datos del Beneficiario */}
         <section className="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
-          <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
+          <div className="px-6 py-4 border-b border-[#00AEC3]/30 flex justify-between items-center" style={{ background: "#00AEC3" }}>
             <div className="flex items-center gap-2">
-              <ClipboardList className="text-primary w-6 h-6" />
-              <h3 className="font-bold text-slate-800 dark:text-slate-200">3. Datos del Beneficiario</h3>
+              <ClipboardList className="text-white w-6 h-6" />
+              <h3 className="font-bold text-white">3. Datos del Beneficiario</h3>
             </div>
-            <button onClick={() => setIsSearchingBeneficiario(!isSearchingBeneficiario)} className="px-4 py-1.5 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-all flex items-center justify-center gap-2 shadow-sm text-sm ml-auto">
+            <button onClick={() => setIsSearchingBeneficiario(!isSearchingBeneficiario)} className="px-4 py-1.5 bg-white text-[#00AEC3] rounded-lg font-bold hover:bg-white/90 transition-all flex items-center justify-center gap-2 shadow-sm text-sm ml-auto">
               <Search size={16} />
               Buscar Beneficiario
             </button>
@@ -260,9 +260,9 @@ export default function DatosPrecargador() {
 
         {/* Section 4: Datos de la prestación */}
         <section className="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
-          <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex items-center gap-2">
-            <Hospital className="text-primary w-6 h-6" />
-            <h3 className="font-bold text-slate-800 dark:text-slate-200">4. Datos de la prestación</h3>
+          <div className="px-6 py-4 border-b border-[#00AEC3]/30 flex items-center gap-2" style={{ background: "#00AEC3" }}>
+            <Hospital className="text-white w-6 h-6" />
+            <h3 className="font-bold text-white">4. Datos de la prestación</h3>
           </div>
           <div className="p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -285,9 +285,9 @@ export default function DatosPrecargador() {
 
         {/* Section 5: Datos de la factura */}
         <section className="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
-          <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex items-center gap-2">
-            <ReceiptText className="text-primary w-6 h-6" />
-            <h3 className="font-bold text-slate-800 dark:text-slate-200">5. Datos de la factura</h3>
+          <div className="px-6 py-4 border-b border-[#00AEC3]/30 flex items-center gap-2" style={{ background: "#00AEC3" }}>
+            <ReceiptText className="text-white w-6 h-6" />
+            <h3 className="font-bold text-white">5. Datos de la factura</h3>
           </div>
           <div className="p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -354,9 +354,9 @@ export default function DatosPrecargador() {
 
         {/* Section 6: Cuenta a Depositar */}
         <section className="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
-          <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex items-center gap-2">
-            <Banknote className="text-primary w-6 h-6" />
-            <h3 className="font-bold text-slate-800 dark:text-slate-200">6. Cuenta a Depositar</h3>
+          <div className="px-6 py-4 border-b border-[#00AEC3]/30 flex items-center gap-2" style={{ background: "#00AEC3" }}>
+            <Banknote className="text-white w-6 h-6" />
+            <h3 className="font-bold text-white">6. Cuenta a Depositar</h3>
           </div>
           <div className="p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
